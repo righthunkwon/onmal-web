@@ -1,0 +1,38 @@
+import logo from '@/assets/images/logo.png';
+
+function App() {
+  return (
+    <>
+      <div className='app-container'>
+        {/* 네비게이션 바 */}
+        <nav className='c-nav-bar flex justify-between text-sm'>
+          <div className='flex'>
+            {/* 네비게이션 바 로고 */}
+            <div className='my-auto mx-2 flex items-center  px-3 py-2 cursor-pointer'>
+              <img className='mx-2 w-6 h-6' src={logo} alt='logo' />
+              <span className='font-bold text-xl text-ourTextBlack'>랭고</span>
+            </div>
+            {/* 네비게이션 바 메뉴 */}
+            <ul className='my-auto flex text-ourGray '>
+              <li className='c-menu-item'>시작하기</li>
+              <li className='c-menu-item'>다운로드</li>
+              <li className='c-menu-item'>문의하기</li>
+            </ul>
+          </div>
+          <div className='border-1 border-ourBlue bg-ourBlue text-white  my-auto mx-2 px-1.5 py-1  rounded-lg hover:brightness-110 cursor-pointer whitespace-nowrap'>
+            한국어
+          </div>
+          {/* 아래 화살표 추가 */}
+        </nav>
+
+        {/* 메인 내용 */}
+        <main className='c-content bg-blue-200'>메인페이지</main>
+
+        {/* 푸터 */}
+        <footer className='c-footer bg-yellow-200'>푸터</footer>
+      </div>
+    </>
+  );
+}
+
+export default App;

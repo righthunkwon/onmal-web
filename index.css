@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  /* color */
+  --color-ourBlue: rgb(49, 130, 246); /* #3182F6 */
+  --color-ourGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourBlack: rgb(78, 89, 88); /* #4E5958 */
+
+  /* text */
+  --color-ourTextBlue: rgb(49, 130, 246); /* #3182F6 */
+  --color-ourTextGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourTextBlack: rgb(78, 89, 88); /* #4E5958 */
+
+  /* event */
+  --color-ourHoverBlue: rgb(27, 100, 218); /* #1B64DA */
+  --color-ourHoverWhite: rgb(242, 244, 246); /* #F2F4F6 */
+  --color-ourHoverGray: rgb(139, 149, 161); /* #8B95A1 */
+}
+
+@layer base {
+  html,
+  body {
+    @apply m-0 p-0;
+    font-family: 'Pretendard Variable';
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply lg:w-3/4 mx-auto;
+  }
+
+  .c-nav-bar {
+    @apply mx-auto fixed top-0 lg:left-1/8 lg:w-3/4 w-full z-50 h-15;
+  }
+
+  .c-content {
+    @apply mt-15 min-h-[calc(100vh-8.75rem)];
+  }
+
+  .c-footer {
+    @apply bottom-0 left-0 z-40 w-full h-20;
+  }
+
+  .c-menu-item {
+    @apply px-3 py-2 mx-2 my-auto rounded-lg hover:bg-gray-100 cursor-pointer whitespace-nowrap;
+  }
+}
