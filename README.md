@@ -1,3 +1,16 @@
+## 브랜치 가이드
+
+- master : 운영 서버 배포 브랜치
+- develop : 개발 서버 배포 브랜치
+- feature/detail : 개발 중인 로컬 페이지(기능 별 생성)
+
+### 개발 순서
+
+1. feature/detail 로컬 개발
+2. feature/detail → develop Merge
+3. develop test
+4. develop → master Merge
+
 ## 커밋 컨벤션
 
 - ✨ feat: 새로운 기능을 추가하는 경우
