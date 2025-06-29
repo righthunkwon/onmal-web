@@ -9,8 +9,8 @@ function App() {
           <div className='flex'>
             {/* 네비게이션 바 로고 */}
             <div className='my-auto mx-2 flex items-center  px-3 py-2 cursor-pointer'>
-              <img className='mx-2 w-6 h-6' src={logo} alt='logo' />
-              <span className='font-bold text-xl text-ourTextBlack'>랭고</span>
+              <img className='mx-2 w-6 h-6' src={logo} alt='logo' /> {/* 로고 수정 필요 */}
+              <span className='font-bold text-xl text-ourTextBlack'>온말</span>
             </div>
             {/* 네비게이션 바 메뉴 */}
             <ul className='my-auto flex text-ourGray '>
