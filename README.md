@@ -1,54 +1,14 @@
-# React + TypeScript + Vite
+## 커밋 컨벤션
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- ✨ feat: 새로운 기능을 추가하는 경우
+- 🐞 fix: 버그를 고친경우
+- 📚 docs: 문서를 수정한 경우
+- 📝 style: 코드 포맷 변경, 세미콜론 누락, 코드 수정이 없는경우
+- 🔨 refactor: 코드 리펙토링
+- ☔ test: 테스트 코드. 리펙토링 테스트 코드를 추가했을 때
+- **🧹** chore**:** 빌드 업무 수정, 패키지 매니저 수정
+- 💄 design: CSS 등 사용자가 UI 디자인을 변경했을 때
+- ✏️ rename: 파일명(or 폴더명) 을 수정한 경우
+- 🗑️ remove: 코드(파일) 의 삭제가 있을 때
+- 🌱 add: 파일 추가한 경우
+- 🔀 merge: 브랜치 병합
