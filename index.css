@@ -27,19 +27,19 @@
 
 @layer components {
   .app-container {
-    @apply lg:w-3/4 mx-auto;
+    @apply container mx-auto max-w-3/4;
   }
 
   .c-nav-bar {
-    @apply mx-auto fixed top-0 lg:left-1/8 lg:w-3/4 w-full z-50 h-15;
+    @apply w-full sticky top-0 z-50 h-15;
   }
 
   .c-content {
-    @apply mt-15 min-h-[calc(100vh-8.75rem)];
+    @apply min-h-[calc(100vh-8.75rem)];
   }
 
   .c-footer {
-    @apply bottom-0 left-0 z-40 w-full h-20;
+    @apply z-40 w-full min-h-20;
   }
 
   .c-menu-item {
