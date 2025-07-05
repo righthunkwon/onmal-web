@@ -1,37 +1,23 @@
-import logo from '@/assets/images/logo.png';
+import Header from '@/components/Header';
 
-function App() {
-  return (
-    <>
-      <div className='app-container'>
-        {/* 메뉴 */}
-        <nav className='c-nav-bar flex justify-between text-sm'>
-          <div className='flex'>
-            <div className='my-auto mx-2 flex items-center  px-3 py-2 cursor-pointer'>
-              <img className='mx-2 w-6 h-6' src={logo} alt='logo' /> {/* 로고 수정 필요 */}
-              <span className='font-bold text-xl text-ourTextBlack'>온말</span>
-            </div>
-            <ul className='my-auto flex text-ourGray '>
-              <li className='c-menu-item'>시작하기</li>
-              <li className='c-menu-item'>다운로드</li>
-              <li className='c-menu-item'>문의하기</li>
-            </ul>
-          </div>
-          <div className='border-1 border-ourBlue bg-ourBlue text-white  my-auto mx-2 px-1.5 py-1  rounded-lg hover:brightness-110 cursor-pointer whitespace-nowrap'>
-            한국어
-          </div>
+const App = () => {
+	return (
+		<>
+			<div className="c-container">
+				<Header headerProps={'야호'} />
 
-          {/* 아래 화살표 추가 */}
-        </nav>
+				{/* 메인컨텐츠 */}
+				<main className="c-content bg-blue-200">
+					<span>바로 적용하는 다국어</span>
+					기능 1 다국어 적용 가이드 제공 2 추천 번역 제공 3 컴포넌트 복붙 시
+					한국어 텍스트파일만 감지해서 추천 번역 제공
+				</main>
 
-        {/* 중간메인 */}
-        <main className='c-content bg-blue-200'>메인페이지</main>
-
-        {/* 하단 */}
-        <footer className='c-footer bg-yellow-200'>푸터</footer>
-      </div>
-    </>
-  );
-}
+				{/* 하단푸터 */}
+				<footer className="c-footer bg-yellow-200">푸터</footer>
+			</div>
+		</>
+	);
+};
 
 export default App;
