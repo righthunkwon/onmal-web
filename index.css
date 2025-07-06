@@ -1,48 +1,53 @@
 @import 'tailwindcss';
 
 @theme {
-	/* color */
-	--color-ourBlue: rgb(49, 130, 246); /* #3182F6 */
-	--color-ourGray: rgb(139, 149, 161); /* #8B95A1 */
-	--color-ourBlack: rgb(78, 89, 88); /* #4E5958 */
+  /* color */
+  --color-ourBlue: rgb(49, 130, 246); /* #3182F6 */
+  --color-ourGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourBlack: rgb(78, 89, 88); /* #4E5958 */
+  --color-ourSvgButton: rgb(176, 184, 193); /* B0B8C1 */
 
-	/* text */
-	--color-ourTextBlue: rgb(49, 130, 246); /* #3182F6 */
-	--color-ourTextGray: rgb(139, 149, 161); /* #8B95A1 */
-	--color-ourTextBlack: rgb(78, 89, 88); /* #4E5958 */
+  /* text */
+  --color-ourTextBlue: rgb(49, 130, 246); /* #3182F6 */
+  --color-ourTextGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourTextBlack: rgb(78, 89, 88); /* #4E5958 */
 
-	/* event */
-	--color-ourHoverBlue: rgb(27, 100, 218); /* #1B64DA */
-	--color-ourHoverWhite: rgb(242, 244, 246); /* #F2F4F6 */
-	--color-ourHoverGray: rgb(139, 149, 161); /* #8B95A1 */
+  /* event */
+  --color-ourHoverBlue: rgb(27, 100, 218); /* #1B64DA */
+  --color-ourHoverWhite: rgb(242, 244, 246); /* #F2F4F6 */
+  --color-ourHoverGray: rgb(139, 149, 161); /* #8B95A1 */
 }
 
 @layer base {
-	html,
-	body {
-		@apply m-0 p-0;
-		font-family: 'Pretendard Variable';
-	}
+  html,
+  body {
+    @apply m-0 p-0;
+    font-family: 'Pretendard Variable';
+  }
 }
 
 @layer components {
-	.c-container {
-		@apply container mx-auto max-w-3/4;
-	}
+  .c-container {
+    @apply mx-auto;
+  }
 
-	.c-header {
-		@apply fixed top-0 z-50 my-auto h-15 w-full;
-	}
+  .c-header {
+    @apply fixed top-0 my-auto h-15 w-full whitespace-nowrap;
+  }
 
-	.c-content {
-		@apply min-h-[calc(100vh-8.75rem)];
-	}
+  .c-content {
+    @apply min-h-[calc(100vh-8.75rem)];
+  }
 
-	.c-footer {
-		@apply z-40 min-h-20 w-full;
-	}
+  .c-footer {
+    @apply fixed bottom-0 min-h-20 w-full;
+  }
 
-	.c-menu-item {
-		@apply mx-2 my-auto cursor-pointer rounded-lg px-3 py-2 whitespace-nowrap hover:bg-gray-100;
-	}
+  .c-footer-default {
+    @apply min-h-20 w-full;
+  }
+
+  .c-menu-item {
+    @apply mx-2 my-auto cursor-pointer rounded-lg px-3 py-2 whitespace-nowrap hover:bg-gray-100;
+  }
 }
