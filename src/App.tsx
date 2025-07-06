@@ -19,7 +19,7 @@ const App = () => {
         </main>
 
         {/* 하단푸터 */}
-        <footer className="c-footer-default bg-gray-50">
+        <footer className="c-footer bg-gray-50">
           <ul>
             <li>
               <div>서비스</div>

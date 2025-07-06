@@ -5,7 +5,7 @@
   --color-ourBlue: rgb(49, 130, 246); /* #3182F6 */
   --color-ourGray: rgb(139, 149, 161); /* #8B95A1 */
   --color-ourBlack: rgb(78, 89, 88); /* #4E5958 */
-  --color-ourSvgButton: rgb(176, 184, 193); /* B0B8C1 */
+  --color-ourSvgButton: rgb(176, 184, 193); /* #B0B8C1 */
 
   /* text */
   --color-ourTextBlue: rgb(49, 130, 246); /* #3182F6 */
@@ -13,9 +13,10 @@
   --color-ourTextBlack: rgb(78, 89, 88); /* #4E5958 */
 
   /* event */
-  --color-ourHoverBlue: rgb(27, 100, 218); /* #1B64DA */
-  --color-ourHoverWhite: rgb(242, 244, 246); /* #F2F4F6 */
-  --color-ourHoverGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourEventBlue: rgb(27, 100, 218); /* #1B64DA */
+  --color-ourEventWhite: rgb(242, 244, 246); /* #F2F4F6 */
+  --color-ourEventGray: rgb(139, 149, 161); /* #8B95A1 */
+  --color-ourEventLightGray: rgba(2, 32, 71, 0.05); /* 0220470d */
 }
 
 @layer base {
@@ -36,18 +37,22 @@
   }
 
   .c-content {
-    @apply min-h-[calc(100vh-8.75rem)];
+    @apply min-h-[calc(100vh-3.75rem)];
+  }
+
+  .c-footer-fixed {
+    @apply fixed bottom-0 w-full;
   }
 
   .c-footer {
-    @apply fixed bottom-0 min-h-20 w-full;
+    @apply w-full;
   }
 
-  .c-footer-default {
-    @apply min-h-20 w-full;
+  .c-nav-menu-item {
+    @apply mx-2 my-auto cursor-pointer rounded-lg py-3 whitespace-nowrap hover:bg-gray-100;
   }
 
-  .c-menu-item {
-    @apply mx-2 my-auto cursor-pointer rounded-lg px-3 py-2 whitespace-nowrap hover:bg-gray-100;
+  .c-drawer-menu-item {
+    @apply active:bg-ourEventLightGray z-99 my-auto cursor-pointer px-5 py-5 whitespace-nowrap hover:bg-gray-100;
   }
 }
