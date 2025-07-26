@@ -5,18 +5,22 @@
   --color-ourBlue: rgb(49, 130, 246); /* #3182F6 */
   --color-ourGray: rgb(139, 149, 161); /* #8B95A1 */
   --color-ourBlack: rgb(78, 89, 88); /* #4E5958 */
+  --color-ourDarkGray: rgb(51, 60, 72); /* #333D48 */
   --color-ourSvgButton: rgb(176, 184, 193); /* #B0B8C1 */
 
   /* text */
   --color-ourTextBlue: rgb(49, 130, 246); /* #3182F6 */
   --color-ourTextGray: rgb(139, 149, 161); /* #8B95A1 */
   --color-ourTextBlack: rgb(78, 89, 88); /* #4E5958 */
+  --color-ourTextDarkGray: rgb(51, 60, 72); /* #333D48 */
+  --color-ourTextLightGray: rgb(209, 214, 219); /* #D1D6DB */
 
   /* event */
   --color-ourEventBlue: rgb(27, 100, 218); /* #1B64DA */
   --color-ourEventWhite: rgb(242, 244, 246); /* #F2F4F6 */
   --color-ourEventGray: rgb(139, 149, 161); /* #8B95A1 */
-  --color-ourEventLightGray: rgba(2, 32, 71, 0.05); /* 0220470d */
+  --color-ourEventLightGray: rgba(2, 32, 71, 0.05); /* #0220470d */
+  --color-ourEventDarkGray: rgb(51, 60, 72); /* #333D48 */
 }
 
 @layer base {
@@ -29,11 +33,11 @@
 
 @layer components {
   .c-container {
-    @apply mx-auto;
+    @apply mx-auto max-w-[1140px];
   }
 
   .c-header {
-    @apply fixed top-0 my-auto h-15 w-full whitespace-nowrap;
+    @apply fixed top-0 my-auto h-15 w-full max-w-[1140px] whitespace-nowrap;
   }
 
   .c-content {
@@ -49,7 +53,7 @@
   }
 
   .c-nav-menu-item {
-    @apply mx-2 my-auto cursor-pointer rounded-lg py-3 whitespace-nowrap hover:bg-gray-100;
+    @apply active:bg-ourEventLightGray mx-2 my-auto cursor-pointer rounded-lg px-5 py-3 whitespace-nowrap hover:bg-gray-100;
   }
 
   .c-drawer-menu-item {
