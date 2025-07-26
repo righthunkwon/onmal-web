@@ -12,11 +12,11 @@ const Home: React.FC = () => {
 
         <div className="flex justify-center gap-2 sm:text-xl">
           {/* 최신버전 다운로드 */}
-          <button className="bg-ourBlue rounded-lg px-4 py-2 text-white">
+          <button className="bg-ourBlue hover:bg-ourEventBlueLight rounded-lg px-4 py-2 text-white hover:cursor-pointer">
             다운로드
           </button>
           {/* 다운로드 페이지로 이동 */}
-          <button className="text-ourTextBlue border-ourBlue rounded-lg border-1 px-4 py-2">
+          <button className="text-ourTextBlue border-ourGray hover:text-ourEventBlueDark rounded-lg border-1 px-4 py-2 hover:cursor-pointer hover:border-black">
             살펴보기
           </button>
         </div>
