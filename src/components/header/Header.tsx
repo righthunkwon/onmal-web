@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import BtnDrawerMenu from '@/assets/svgs/btn-drawer-menu.svg?react';
-import HeaderDrawerMenu from '@/components/HeaderDrawerMenu';
-import HeaderNavbarMenu from '@/components/HeaderNavbarMenu';
-import HeaderLogo from '@/components/HeaderLogo';
+import HeaderDrawerMenu from '@/components/header/HeaderDrawerMenu';
+import HeaderNavbarMenu from '@/components/header/HeaderNavbarMenu';
+import HeaderLogo from '@/components/header/HeaderLogo';
 import BtnClose from '@/assets/svgs/btn-close.svg?react';
 
 const Header: React.FC = () => {
@@ -22,13 +22,21 @@ const Header: React.FC = () => {
         </div>
         <button className="sm:hidden" onClick={toggleDrawerMenu}>
           {open ? (
-            <BtnClose className="mx-4" width={20} height={20} />
+            <BtnClose
+              className="mx-4 hover:cursor-pointer"
+              width={20}
+              height={20}
+            />
           ) : (
-            <BtnDrawerMenu className="mx-4" width={20} height={20} />
+            <BtnDrawerMenu
+              className="mx-4 hover:cursor-pointer"
+              width={20}
+              height={20}
+            />
           )}
         </button>
       </nav>
-      <div className="h-15"></div>
+      <div id="introduce" className="h-15"></div>
       <HeaderDrawerMenu open={open} />
     </>
   );

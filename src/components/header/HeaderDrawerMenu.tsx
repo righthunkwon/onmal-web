@@ -8,7 +8,7 @@ const HeaderDrawerMenu: React.FC<HeaderDrawerMenuProps> = ({ open }) => {
   return (
     <>
       <div
-        className={`border-ourGray w-full overflow-hidden border-b-1 bg-white transition-all duration-400 sm:hidden ${open ? 'fixed top-15 max-h-48 translate-y-0 opacity-100' : 'max-h-0 -translate-y-2 opacity-0'}`}
+        className={`border-ourGray fixed w-full overflow-hidden bg-white transition-all duration-500 sm:hidden ${open ? 'fixed top-15 max-h-48 translate-y-0' : 'max-h-0 -translate-y-2'}`}
       >
         <ul className="text-ourTextBlack">
           <li className="c-drawer-menu-item">시작하기</li>
