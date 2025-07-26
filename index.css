@@ -16,7 +16,8 @@
   --color-ourTextLightGray: rgb(209, 214, 219); /* #D1D6DB */
 
   /* event */
-  --color-ourEventBlue: rgb(27, 100, 218); /* #1B64DA */
+  --color-ourEventBlueDark: rgb(27, 100, 218); /* #1B64DA */
+  --color-ourEventBlueLight: rgb(81, 162, 255); /* #51a2ff */
   --color-ourEventWhite: rgb(242, 244, 246); /* #F2F4F6 */
   --color-ourEventGray: rgb(139, 149, 161); /* #8B95A1 */
   --color-ourEventLightGray: rgba(2, 32, 71, 0.05); /* #0220470d */
