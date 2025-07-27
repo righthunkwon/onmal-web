@@ -1,6 +1,10 @@
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
-import Home from '@/domains/home/Home';
+import HomePage from '@/domains/home/HomePage';
+import StartPage from '@/domains/start/StartPage';
+import DownloadPage from '@/domains/download/DownloadPage';
+import NotFoundPage from '@/domains/not-found/NotFoundPage';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -10,12 +14,17 @@ const App = () => {
         <Header />
 
         {/* 메인 */}
-        <main className="c-content bg-red-200">
-          <Home />
+        <main className="c-content c-container">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/start" element={<StartPage />} />
+            <Route path="/download" element={<DownloadPage />} />
+            <Route path="/download/:version" element={<DownloadPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
         </main>
-
-        {/* 푸터 */}
       </div>
+      {/* 푸터 */}
       <Footer />
     </>
   );
