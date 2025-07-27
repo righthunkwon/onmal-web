@@ -63,7 +63,7 @@
 }
 
 @theme {
-  --animate-fade-in: fade-in 1.5s ease-in-out forwards;
+  --animate-fade-in: fade-in 1.2s ease-in-out forwards;
   @keyframes fade-in {
     0% {
       opacity: 0;
