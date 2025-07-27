@@ -16,7 +16,7 @@
   --color-ourTextLightGray: rgb(209, 214, 219); /* #D1D6DB */
 
   /* event */
-  --color-ourEventBlueDark: rgb(36, 115, 242); /* #2473f2 */
+  --color-ourEventBlueDark: rgb(27, 100, 218); /* #1B64DA */
   --color-ourEventBlueLight: rgb(81, 162, 255); /* #51a2ff */
   --color-ourEventWhite: rgb(242, 244, 246); /* #F2F4F6 */
   --color-ourEventGray: rgb(139, 149, 161); /* #8B95A1 */
@@ -34,23 +34,11 @@
 
 @layer components {
   .c-container {
-    @apply mx-auto max-w-[1140px];
-  }
-
-  .c-header {
-    @apply fixed top-0 z-100 my-auto h-15 w-full max-w-[1140px] whitespace-nowrap;
+    @apply min-h-[calc(100vh)]; /* 뷰포트 */
   }
 
   .c-content {
-    @apply min-h-[calc(100vh-3.75rem)];
-  }
-
-  .c-footer-fixed {
-    @apply fixed bottom-0 w-full;
-  }
-
-  .c-footer {
-    @apply z-100 w-full;
+    @apply mx-auto w-[1140px] max-w-[1140px]; /* 컨텐츠 내용 제한(1140px) */
   }
 
   .c-nav-menu-item {
@@ -73,6 +61,19 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  --animate-bounce-small: bounce-small 1.5s ease-in-out infinite;
+  @keyframes bounce-small {
+    0%,
+    100% {
+      transform: translateY(15%);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 0.2;
     }
   }
 

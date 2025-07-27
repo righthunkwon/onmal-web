@@ -9,22 +9,16 @@ import { Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
     <>
-      <div className="c-container">
-        {/* 헤더 */}
-        <Header />
-
-        {/* 메인 */}
-        <main className="c-content c-container">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/start" element={<StartPage />} />
-            <Route path="/download" element={<DownloadPage />} />
-            <Route path="/download/:version" element={<DownloadPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </main>
-      </div>
-      {/* 푸터 */}
+      <Header />
+      <main className="c-container">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/start" element={<StartPage />} />
+          <Route path="/download" element={<DownloadPage />} />
+          <Route path="/download/:version" element={<DownloadPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

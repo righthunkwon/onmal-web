@@ -14,30 +14,31 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <nav className="c-header flex justify-between bg-white text-sm">
-        <div className="flex w-full">
-          <HeaderLogo />
-          <div className="hidden w-full sm:flex"></div>
-          <HeaderNavbarMenu />
-        </div>
-        <button className="sm:hidden" onClick={toggleDrawerMenu}>
-          {open ? (
-            <BtnClose
-              className="mx-4 hover:cursor-pointer"
-              width={20}
-              height={20}
-            />
-          ) : (
-            <BtnDrawerMenu
-              className="mx-4 hover:cursor-pointer"
-              width={20}
-              height={20}
-            />
-          )}
-        </button>
-      </nav>
-      <div id="introduce" className="h-15"></div>
-      <HeaderDrawerMenu open={open} />
+      <header className="fixed top-0 z-100 my-auto flex h-15 w-full justify-center border-b border-gray-200 bg-white whitespace-nowrap">
+        <nav className="c-content flex justify-between bg-white text-sm">
+          <div className="flex w-full">
+            <HeaderLogo />
+            <div className="hidden w-full sm:flex"></div>
+            <HeaderNavbarMenu />
+          </div>
+          <button className="sm:hidden" onClick={toggleDrawerMenu}>
+            {open ? (
+              <BtnClose
+                className="mx-4 hover:cursor-pointer"
+                width={20}
+                height={20}
+              />
+            ) : (
+              <BtnDrawerMenu
+                className="mx-4 hover:cursor-pointer"
+                width={20}
+                height={20}
+              />
+            )}
+          </button>
+        </nav>
+        <HeaderDrawerMenu open={open} />
+      </header>
     </>
   );
 };
