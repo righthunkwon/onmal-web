@@ -47,9 +47,8 @@ const HomeIntroduce1: React.FC = () => {
       <section className="animate-fade-in flex min-h-[calc(100vh)] flex-col justify-between pt-32 sm:pt-48">
         <div className="mx-auto flex-1 text-center">
           <div className="mb-8 text-3xl leading-normal font-semibold sm:mb-12 sm:text-6xl sm:leading-tight">
-            <span className="block">바로 적용하는 다국어</span>
-            <span className="block sm:inline">온말에서 </span>
-            <span className="sm:inline">쉽고 간편하게</span>
+            <span className="block">개발자를 위한</span>
+            <span className="block">바로 적용하는 컨벤션</span>
           </div>
 
           <div className="flex justify-center gap-2 sm:text-xl">
