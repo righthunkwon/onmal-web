@@ -39,6 +39,14 @@ const Footer: React.FC = () => {
                 다운로드
               </Link>
             </li>
+            <li className="py-2">
+              <Link
+                className="text-ourTextLightGray py-2 pr-4 hover:brightness-80"
+                to={'/support'}
+              >
+                문의하기
+              </Link>
+            </li>
           </ul>
           <ul className="flex gap-2">
             <li className="h-12 w-12">

@@ -7,19 +7,19 @@ const HeaderNavbarMenu: React.FC = () => {
       <ul className="text-ourTextBlack my-auto hidden sm:flex">
         <li>
           {/* 시작하기 */}
-          <Link className="c-nav-menu-item" to={'/start'}>
+          <Link to={'/start'} className="c-nav-menu-item">
             시작하기
           </Link>
         </li>
         <li>
           {/* 다운로드 */}
-          <Link className="c-nav-menu-item" to={'/download'}>
+          <Link to={'/download'} className="c-nav-menu-item">
             다운로드
           </Link>
         </li>
         <li>
           {/* 문의하기 */}
-          <Link className="c-nav-menu-item" to="mailto:dhtmxk8134@naver.com">
+          <Link to={'/support'} className="c-nav-menu-item">
             문의하기
           </Link>
         </li>

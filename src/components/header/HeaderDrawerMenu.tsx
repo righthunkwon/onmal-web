@@ -13,17 +13,17 @@ const HeaderDrawerMenu: React.FC<HeaderDrawerMenuProps> = ({ open }) => {
       >
         <ul className="text-ourTextBlack">
           <li className="c-drawer-menu-item">
-            <Link className="block w-full" to={'/start'}>
+            <Link to={'/start'} className="block w-full">
               시작하기
             </Link>
           </li>
           <li className="c-drawer-menu-item">
-            <Link className="block w-full" to={'/download'}>
+            <Link to={'/download'} className="block w-full">
               다운로드
             </Link>
           </li>
           <li className="c-drawer-menu-item">
-            <Link to="mailto:dhtmxk8134@naver.com" className="block w-full">
+            <Link to={'/support'} className="block w-full">
               문의하기
             </Link>
           </li>
