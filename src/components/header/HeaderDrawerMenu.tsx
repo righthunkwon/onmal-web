@@ -13,8 +13,8 @@ const HeaderDrawerMenu: React.FC<HeaderDrawerMenuProps> = ({ open }) => {
       >
         <ul className="text-ourTextBlack">
           <li className="c-drawer-menu-item">
-            <Link to={'/start'} className="block w-full">
-              시작하기
+            <Link to={'/notice'} className="block w-full">
+              공지사항
             </Link>
           </li>
           <li className="c-drawer-menu-item">

@@ -22,15 +22,6 @@ const Footer: React.FC = () => {
                 소개
               </Link>
             </li>
-
-            <li className="py-2">
-              <Link
-                className="text-ourTextLightGray py-2 pr-4 hover:brightness-80"
-                to={'/start'}
-              >
-                시작하기
-              </Link>
-            </li>
             <li className="py-2">
               <Link
                 className="text-ourTextLightGray py-2 pr-4 hover:brightness-80"

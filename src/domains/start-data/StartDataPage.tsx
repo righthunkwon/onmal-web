@@ -2,15 +2,19 @@ import PagePaddingWrapper from '@/components/common/PagePaddingWrapper';
 import usePageTitle from '@/hooks/usePageTitle';
 import React from 'react';
 
-const StartPage: React.FC = () => {
-  usePageTitle('시작하기 | 온말');
+const StartDataPage: React.FC = () => {
+  usePageTitle('시작하기 - 표준데이터 | 온말');
 
   return (
     <>
       <PagePaddingWrapper />
       <div className="mx-auto text-center">
         <div className="mb-8 text-3xl leading-tight font-semibold sm:mb-12 sm:text-6xl">
-          시작하기 페이지
+          {/* 
+          데이터표준 참고 정리
+          https://12bme.tistory.com/246 
+          */}
+          표준데이터 페이지
         </div>
 
         <div>
@@ -21,4 +25,4 @@ const StartPage: React.FC = () => {
   );
 };
 
-export default StartPage;
+export default StartDataPage;
