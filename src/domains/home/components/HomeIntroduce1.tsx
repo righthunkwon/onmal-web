@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import down from '@/assets/svgs/btn-angle-down.svg';
 
 const HomeIntroduce1: React.FC = () => {
@@ -44,9 +43,9 @@ const HomeIntroduce1: React.FC = () => {
 
   return (
     <>
-      <section className="animate-fade-in flex min-h-[calc(100vh)] flex-col justify-between pt-32 sm:pt-48">
+      <section className="animate-fade-in flex min-h-[calc(50vh)] flex-col justify-between pt-32 sm:min-h-[calc(100vh)] sm:pt-48">
         <div className="mx-auto flex-1 text-center">
-          <div className="mb-8 text-3xl leading-normal font-semibold sm:mb-12 sm:text-6xl sm:leading-tight">
+          <div className="my-8 text-3xl leading-normal font-semibold sm:my-12 sm:text-6xl sm:leading-tight">
             <span className="block">개발자를 위한</span>
             <span className="block">바로 적용하는 컨벤션</span>
           </div>
@@ -60,15 +59,16 @@ const HomeIntroduce1: React.FC = () => {
               다운로드
             </button>
             {/* 시작하기 페이지로 이동 */}
-            <Link
-              to={'/start'}
+            <button
+              onClick={handleClickMoveDown}
               className="text-ourTextBlue border-ourGray hover:text-ourEventBlueDark rounded-lg border-1 px-4 py-2 hover:cursor-pointer hover:border-black"
             >
               살펴보기
-            </Link>
+            </button>
           </div>
         </div>
-        <div className="animate-bounce-small mx-auto">
+
+        <div className="animate-bounce-small mx-auto hidden sm:block">
           <button
             className="hover:cursor-pointer"
             onClick={handleClickMoveDown}

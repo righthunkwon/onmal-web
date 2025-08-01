@@ -1,14 +1,14 @@
 import React from 'react';
 import down from '@/assets/svgs/btn-angle-down.svg';
 
-const HomeIntroduce2: React.FC = () => {
+const HomeIntroduce3: React.FC = () => {
   /**
    * 부드러운 스크롤 이동을 구현한 함수
    */
   const handleClickMoveDown = () => {
     const start = window.scrollY; // 현재 스크롤 위치
     const startTime = performance.now(); // 시작시간
-    const distance = window.innerHeight * 2 - 60 - start; // 뷰포트 - 헤더 - 현재스크롤위치
+    const distance = window.innerHeight * 3 - 60 - start; // 뷰포트 - 헤더 - 현재스크롤위치
     const duration = 1000; // 스크롤 이동시간
 
     /**
@@ -36,16 +36,15 @@ const HomeIntroduce2: React.FC = () => {
 
   return (
     <>
-      <section className="bg-ourDarkGray flex min-h-[calc(50vh)] flex-col items-center justify-between py-16 pt-32 sm:min-h-[calc(100vh)] sm:pt-48">
+      <section className="bg-ourBlue flex min-h-[calc(50vh)] flex-col items-center justify-between py-16 pt-32 sm:min-h-[calc(100vh)] sm:pt-48">
         <div className="mx-auto flex-1 text-center">
           <div className="my-8 px-12 text-xl leading-normal font-semibold text-white sm:my-12 sm:text-3xl sm:leading-tight">
-            <span className="block">복잡한 DB 설계, </span>
+            <span className="block">어려운 다국어 처리, </span>
             <span className="block sm:py-2">
-              짧고 명확한 표준 단어로 간단하게.
+              메뉴, 버튼, 라벨, 메시지별로 쉽게.
             </span>
           </div>
         </div>
-
         <div className="animate-bounce-small mx-auto hidden sm:block">
           <button
             className="hover:cursor-pointer"
@@ -59,4 +58,4 @@ const HomeIntroduce2: React.FC = () => {
   );
 };
 
-export default HomeIntroduce2;
+export default HomeIntroduce3;
