@@ -38,10 +38,14 @@
   }
 
   .c-content {
-    @apply mx-auto w-[1140px] max-w-[1140px]; /* 컨텐츠 내용 제한(1140px) */
+    @apply mx-auto max-w-[1140px] sm:w-full; /* 컨텐츠 내용 제한(1140px) */
   }
 
   .c-nav-menu-item {
+    @apply active:bg-ourEventLightGray mx-2 my-auto block cursor-pointer rounded-lg px-5 py-3 whitespace-nowrap hover:bg-gray-100;
+  }
+
+  .c-nav-menu-item-list {
     @apply active:bg-ourEventLightGray mx-2 my-auto block cursor-pointer rounded-lg px-5 py-3 whitespace-nowrap hover:bg-gray-100;
   }
 
