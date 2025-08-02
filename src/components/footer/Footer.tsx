@@ -69,6 +69,9 @@ const Footer: React.FC = () => {
               </Link>
             </li>
           </ul>
+          <div className="text-ourTextGray my-4 text-xs">
+            Copyright 2025. 권정훈 all rights reserved.
+          </div>
         </div>
       </footer>
     </>
