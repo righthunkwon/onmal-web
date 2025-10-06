@@ -8,7 +8,7 @@ const SupportPage: React.FC = () => {
   return (
     <>
       <PagePaddingWrapper />
-      <div className="mx-auto text-center">
+      <section className="mx-auto text-center">
         <div className="mb-8 text-3xl leading-tight font-semibold sm:mb-12 sm:text-6xl">
           문의하기 페이지
         </div>
@@ -19,7 +19,7 @@ const SupportPage: React.FC = () => {
           <div>2. 문의 목록</div>
           <div>3. 문의 작성</div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

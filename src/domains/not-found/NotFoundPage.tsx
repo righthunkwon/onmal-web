@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <PagePaddingWrapper />
-      <div className="mx-auto text-center">
+      <section className="mx-auto text-center">
         <div className="mb-12 text-3xl leading-tight font-semibold sm:mb-12 sm:text-6xl">
           <span className="block sm:inline">페이지를 </span>
           <span className="block sm:inline">찾을 수 없습니다.</span>
@@ -21,7 +21,7 @@ const NotFoundPage: React.FC = () => {
         >
           홈으로
         </Link>
-      </div>
+      </section>
     </>
   );
 };

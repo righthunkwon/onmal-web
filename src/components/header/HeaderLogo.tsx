@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '@/assets/images/logo.svg';
+import logo from '@/assets/svgs/logo.svg';
 import { Link } from 'react-router-dom';
 
 const HeaderLogo: React.FC = () => {

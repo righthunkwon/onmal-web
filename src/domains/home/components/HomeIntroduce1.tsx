@@ -6,7 +6,7 @@ const HomeIntroduce1: React.FC = () => {
    * 최신 파일을 다운로드 하는 함수
    */
   const handleClickDownload = () => {
-    alert('다운로드');
+    alert('준비 중입니다.');
   };
 
   /**

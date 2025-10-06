@@ -8,7 +8,7 @@ const DownloadPage: React.FC = () => {
   return (
     <>
       <PagePaddingWrapper />
-      <div className="mx-auto text-center">
+      <section className="mx-auto text-center">
         <div className="mb-8 text-3xl leading-tight font-semibold sm:mb-12 sm:text-6xl">
           다운로드 페이지
         </div>
@@ -19,7 +19,7 @@ const DownloadPage: React.FC = () => {
           <div>2. 버전별 다운로드 파일</div>
           <div>3. 버전별 특징</div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
